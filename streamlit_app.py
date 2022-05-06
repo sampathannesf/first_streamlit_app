@@ -41,8 +41,8 @@ try:
     #fruityvice_response=requests.get("https://fruityvice.com/api/fruit/"+ fruit_choice)
     #fruityvice_normalized=pandas.json_normalize(fruityvice_response.json())
          streamlit.dataframe(back_from_function)
-#Except URL error as e:
- #   streamlit.error()
+Except URLError as e:
+    streamlit.error()
 #streamlit.write('The user entered', fruit_choice)
 
 #import requests
