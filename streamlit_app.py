@@ -42,7 +42,7 @@ try:
     #fruityvice_normalized=pandas.json_normalize(fruityvice_response.json())
          streamlit.dataframe(back_from_function)
   Except URL error as e:
-         streamlit.error()
+                        streamlit.error()
 #streamlit.write('The user entered', fruit_choice)
 
 #import requests
